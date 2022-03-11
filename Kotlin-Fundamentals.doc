@@ -1,0 +1,13 @@
+Kotlin
+
+- Runs anywhere the JVM can Run
+- Statically typed
+- Object-oriented
+- Functional programming
+
+Four guiding principles
+- Conciseness
+- Safety : No null
+- Pragmatism : no research based - Practical
+- Interoperability: Designed to interoperably with Java
+
