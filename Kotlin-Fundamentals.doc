@@ -16,8 +16,8 @@ Declaring Variables:
 Val number = 25
 Val number: Int = 25
 
-Val employee1 = Employee(ÒUtsav ShresthaÓ, 500)
-Employee1.name = ÒRishav ShresthaÓ
+Val employee1 = Employee(ï¿½Utsav Shresthaï¿½, 500)
+Employee1.name = ï¿½Rishav Shresthaï¿½
 
 We can change the value of a val by using .specifier
 
@@ -26,20 +26,20 @@ Class Employee(var name: String, val id: Int){
 
 
 Differences between Java and Kotlin
-1. In Kotlin, thereÕs no need to put semicolon at the end.
+1. In Kotlin, thereï¿½s no need to put semicolon at the end.
 2. We cannot use keyword unless for intended purpose in Java, there are soft and hard keywords in Kotlin.
 3. Kotlin has its own string class.Check String documentation
-4. Exceptions: In Java, it is necessary to declare exceptions. In Kotlin, it doesnÕt difference between exceptions.
+4. Exceptions: In Java, it is necessary to declare exceptions. In Kotlin, it doesnï¿½t difference between exceptions.
 5. Ternary Operator: No longer in Kotlin
 6. For Loops: Different for loops compared to Java
-7. Kotlin doesnÕt have static keyword.
-8. We donÕt have to use New keyword.
+7. Kotlin doesnï¿½t have static keyword.
+8. We donï¿½t have to use New keyword.
 
 Structural equality is == in Kotlin
 Referential equality is === in Kotlin
 
 Operators in Kotlin:
-ÔorÕ and ÔandÕ
+ï¿½orï¿½ and ï¿½andï¿½
 
 Any is a placeholding
 Is checks the type of instance
@@ -48,7 +48,8 @@ String Template
 Use $ to reference variables inside a string
 
 Raw Strings
-Triple quoted string. Which is useful for filepath.ÓÓÓ ÒÓÓ
-DonÕt need to add line change with triple quote. Use function trimMargin to indent.
+Triple quoted string. Which is useful for filepath.
+Don't need to add line change with triple quote. Use function trimMargin to indent.
 
 
+sasasasasas
