@@ -7,7 +7,49 @@ Kotlin
 
 Four guiding principles
 - Conciseness
-- Safety : No null
-- Pragmatism : no research based - Practical
-- Interoperability: Designed to interoperably with Java
+- Safety: No null
+- Pragmatism: no research based - Practical
+- Interoperability: Designed to be interoperable with Java
 
+
+Declaring Variables:
+Val number = 25
+Val number: Int = 25
+
+Val employee1 = Employee(�Utsav Shrestha�, 500)
+Employee1.name = �Rishav Shrestha�
+
+We can change the value of a val by using .specifier
+
+Class Employee(var name: String, val id: Int){
+}
+
+
+Differences between Java and Kotlin
+1. In Kotlin, there�s no need to put semicolon at the end.
+2. We cannot use keyword unless for intended purpose in Java, there are soft and hard keywords in Kotlin.
+3. Kotlin has its own string class.Check String documentation
+4. Exceptions: In Java, it is necessary to declare exceptions. In Kotlin, it doesn�t difference between exceptions.
+5. Ternary Operator: No longer in Kotlin
+6. For Loops: Different for loops compared to Java
+7. Kotlin doesn�t have static keyword.
+8. We don�t have to use New keyword.
+
+Structural equality is == in Kotlin
+Referential equality is === in Kotlin
+
+Operators in Kotlin:
+�or� and �and�
+
+Any is a placeholding
+Is checks the type of instance
+
+String Template
+Use $ to reference variables inside a string
+
+Raw Strings
+Triple quoted string. Which is useful for filepath.
+Don't need to add line change with triple quote. Use function trimMargin to indent.
+
+
+sasasasasas
