@@ -54,3 +54,56 @@ data class Car(val color: String, val model: String, val year: Int){
 
 -----------------------------------------------------------------------------
 
+Add String. to create extention function
+You can use this instead of  .str
+
+-----------------------------------------------------------------------------
+
+Inline: When an inline function is compiled its body is directly substituted for the function call in other words it's not compiled to a function at all it's compiled to its body.
+
+Add inline: Works best with Lambda Parameters
+
+inline fun labelMultiply(operand1)
+-----------------------------------------------------------------------------
+
+Inheritance:
+Everthing in Kotlin is public and final by default.
+
+open class Printer { -> Open keyword tells compiler that we want classes to be able to extend it
+
+}
+
+class LaserPrinter: Printer {
+    constructor(): super() -> If we didn't want primary constructor
+}
+
+or we can:
+
+open class Printer() {
+
+}
+
+class LaserPrinter(): Printer() {
+
+}
+
+and we can type like this:
+
+fun main(args: Array<String>) {
+    val laserPrinter = LaserPrinter("Brother 6969")
+    laserPrinter.printModel()
+}
+
+abstract class Printer(val modelName: String){
+
+    open fun printModel() = println("The model name of this printer is $modelName) -> when you want function to be extendable or to be able to be overridden you have to use the open keyword unless its abstract.
+
+    abstract fun bestSellingPrice(): Double -> abstract functions are open by default
+}
+ -> No need of open keyword because abstract is present.
+
+class LaserPrinter(modelName: String: Printer(modelName)){
+    override fun printModel() = println("The model name of this laser printter is $modelName) -> Need override keyword to override a function
+
+    override fun bestSellingPrice(): Double = 129.99 -> Always have to use override
+
