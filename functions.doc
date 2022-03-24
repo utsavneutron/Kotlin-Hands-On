@@ -135,3 +135,31 @@ interface mySubInterface: myInterface {
     fun mysubfunction(num: Int): String
 }
 
+-------------------------------------------------------------------------------
+
+Singletons in Kotlin
+
+In Kotlin, there's a way to declare a class and define an instance at the same time, and this is where the object keyword comes in. Now there are three typical use cases for the object keyword, the first use case is singletons, the second use case is what's called companion objects and the third use case is object expressions. 
+
+Singleton is a common design pattern in Java, we use it when we want one and only one instance of a class during the running of an application. In java, We declare a class, it has a private constructor and then the outside world gets access to the single instance that the class creates. And it gets access to this instance using static method.
+
+In Kotlin, we use the object keyword because there can only ever be on instance of object class. 
+
+import java.time.Year
+
+fun main(args: Array<String>) {
+    println(CompanyCommunications.getTagLine())
+    println(CompanyCommunications.getCopyrightLine())
+}
+
+object CompanyCommunications {
+    val currentYear = Year.now().value
+
+    fun getTagLine() = "Our Company Rocks!"
+    fun getCopyrightLine() = "Copyright \u00A9 $currentYear Our Company. All rights reserved"
+}
+
+------------------------------------------------------------------------------
+
+Companion object
+
