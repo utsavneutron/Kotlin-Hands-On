@@ -214,3 +214,13 @@ enum class Department(val fullName: String, val numEmployees: Int) {
 }
 ------------------------------------------------------------------------------
 
+import
+
+IntelliJ automatically imports functions from other file
+
+-------------------------------------------------------------------------
+
+Internal access
+
+internal keyword makes it closed to only one module. Function can be made internal to make it private. If you use private keywork in class or function, then internal becomes meaningless.
+
