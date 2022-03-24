@@ -163,3 +163,40 @@ object CompanyCommunications {
 
 Companion object
 
+object CompanyCommunications {
+    val currentYear = Year.now().value
+
+    fun getTagLine() = "Our Company Rocks!"
+    fun getCopyrightLine() = "Copyright \u00A9 $currentYear Our Company. All rights reserved"
+}
+
+class Someclass {
+    private val privateVar = 6
+
+    fun accessPrivateVar() {
+        println("I'm accessing privateVar: $private)
+    }
+}
+Instead with companin object we can do:
+
+class Someclass {
+    companion object {
+        private val privateVar = 6
+
+        fun accessPrivateVar() = "I'm accessing privateVar: $privateVar"
+    }
+}
+
+println(someClass.Companion.accessPrivateVar())
+
+class Someclass {
+    companion object SomeCompanion{
+        private val privateVar = 6
+
+        fun accessPrivateVar() = "I'm accessing privateVar: $privateVar"
+    }
+}
+println(someClass.SomeCompanion.accessPrivateVar())
+
+We can use Companion objects to call private constructors, and to implement factory pattern.
+
