@@ -106,4 +106,32 @@ class LaserPrinter(modelName: String: Printer(modelName)){
     override fun printModel() = println("The model name of this laser printter is $modelName) -> Need override keyword to override a function
 
     override fun bestSellingPrice(): Double = 129.99 -> Always have to use override
+}
+
+
+data class DataClass(val number: Int) { -> Data Classes are closed tight and they can't be extended. They can't be abstract or inner classes.
+
+}
+
+------------------------------------------------------------------------------
+
+Interfaces
+
+open class something: mySubInterface [
+    val someProperty: String
+
+    constructor(somePerimeter: String){
+        someProperty = somePerimeter
+        println("I'm in the parent's constructor")
+    }
+]
+
+interface myInterface { -> You dont create instance for interface
+    val number: Int
+    fun myfunction(str: String): String
+}
+
+interface mySubInterface: myInterface {
+    fun mysubfunction(num: Int): String
+}
 
