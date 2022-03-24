@@ -200,3 +200,17 @@ println(someClass.SomeCompanion.accessPrivateVar())
 
 We can use Companion objects to call private constructors, and to implement factory pattern.
 
+-----------------------------------------------------------------------------
+
+Enum:
+
+println(department.ACT.getDeptInfo())
+
+enum class Department(val fullName: String, val numEmployees: Int) {
+    HR('Human Resource', 5), IT('Information Technology", 10),
+    ACT('Accounting',3), Sales('Sales',20);
+
+    fun getDeptInfo() = "The $fullName department has $numEmployees employees"
+}
+------------------------------------------------------------------------------
+
