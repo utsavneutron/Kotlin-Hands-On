@@ -195,3 +195,46 @@ fun main(args: Array<String>){
 
     println(str)
 }
+
+----------------------------------------------------------------------------------------------------
+
+Try/Catch Expression
+
+fun main(args: String<Array>){
+    println(getNumber("22.5"))
+}
+
+fun getNumber(str: String): Int {
+    return try {
+        Integer.parseInt(str)
+    }
+    catch(e: NumberFormatException) {
+        0
+    }
+    finally {
+        println("I'm in the finally block")
+    }
+}
+
+Elvis Operator
+
+
+fun main(args: String<Array>){
+    println(getNumber("22.5")) ?: throw IllegalArgumentException("Number isn't an Int")
+}
+
+fun getNumber(str: String): Int? {
+    return try {
+        Integer.parseInt(str)
+    }
+    catch(e: NumberFormatException) {
+        null
+    }
+    finally {
+        println("I'm in the finally block")
+    }
+}
+
+fun notImplementedYet(something: String): Nothing{
+    throw IllegalArgumentException("Implement me!")
+}
