@@ -139,3 +139,59 @@ fun main(args: Array<String>){
         else -> println("Doesn't match anything")
     }
 }
+
+val something: Any = obj2
+
+when(something) {
+    is String -> println(something.toUpperCase)
+    is BigDecimal -> println(something.remainder(BigDecimal(10.5)))
+    is Int -> println("$(something -22)")
+    else -> print("I have no idea")
+}
+And
+Assigning value to variable
+
+val z = when(something) {
+    is String -> println(something.toUpperCase)
+    is BigDecimal -> println(something.remainder(BigDecimal(10.5)))
+    is Int -> println("$(something -22)")
+    else -> print("I have no idea")
+}
+
+when(something) {
+    is String -> {
+        println(something.toUpperCase)
+        1
+    }
+    is BigDecimal -> {
+        println(something.remainder(BigDecimal(10.5)))
+        2
+    }
+    is Int -> {
+        println("$(something -22)")
+        3
+    }
+    else -> {
+        print("I have no idea")
+        4
+    }
+}
+
+With Enum,
+
+enum class Season {
+    spring, summer, winter, fall
+}
+
+fun main(args: Array<String>){
+    val timeOfYear = Season.winter
+
+    val str = when(timeOfYear) {
+        Season.spring -> "Flowers are blooming"
+        Season.summer -> "Its hot"
+        Season.fall -> "It's getting cooler"
+        Season.winter -> "I need a coat"
+    }
+
+    println(str)
+}
